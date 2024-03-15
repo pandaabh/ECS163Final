@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECS163 Final</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        
+        .chart-title {
+            text-align: center;
+        }
+        .label {
+            text-align: center;
+        }
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            padding: 8px;
+            font: 12px sans-serif;
+            background: lightsteelblue;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+            opacity: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="chart-container" id="boxplot">
+        <h2 class="chart-title">Boxplot - Age Range of Heart Disease Diagnosed</h2>
+    </div>
+    
+    <div class="chart-container" id="Hbargraph">
+        <h2 class="chart-title">Horizontal Bar Graph - Leading Cause of Death in the US (2017)</h2>
+    </div>
+
+    <div class="chart-container" id="parallel-coordinates">
+        <h2 class="chart-title">Parallel Coordinates Chart - Cause vs. Age-adjusted Death Rates</h2>
+        <h7 class="label">*Age-adjusted death rates (per 100,000 population) are based on the 2000 U.S. standard population.</h7>
+    </div>
+
+    <div class="chart-container" id="scatter-bar">
+        <h2 class="chart-title">Scatterplot + Bar Graph - Heart Disease Mortality Rate (2006 - 2018), Comparing Races/Ethnicities</h2>
+
+    </div>
+
+    <div id="tooltip" class="tooltip"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
