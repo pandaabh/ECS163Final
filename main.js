@@ -393,7 +393,7 @@ d3.csv("NCCDCardiov.csv").then(function(data) {
 
     categories.forEach((category, index) => {
         yearGroups.selectAll(".bar-" + category)
-            .data(d => [d].map(dd => ({ category: category, value: dd[category], Year: dd.Year }))) // Encapsulate each bar's data correctly
+            .data(d => [d].map(dd => ({ category: category, value: dd[category], Year: dd.Year }))) 
             .enter().append("rect")
                 .attr("x", x0.bandwidth() / categories.length * index)
                 .attr("y", d => y(d.value))
@@ -414,6 +414,4 @@ d3.csv("NCCDCardiov.csv").then(function(data) {
                         .style("opacity", 0);
                 });
     });
-
-
 });
